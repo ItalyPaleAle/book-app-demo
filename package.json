@@ -1,0 +1,33 @@
+{
+  "name": "book-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack-dev-server --content-base public",
+    "serve": "npx serve -n -l 5000 public",
+    "lint": "npx eslint -c .eslintrc.js --ext .js,.svelte,.html ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "mini-css-extract-plugin": "^0.11.2",
+    "serve": "^11.3.2",
+    "style-loader": "^1.2.1",
+    "svelte": "^3.28.0",
+    "svelte-loader": "^2.13.6",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "svelte-spa-router": "^3.0.2"
+  }
+}
